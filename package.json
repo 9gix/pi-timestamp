@@ -1,0 +1,43 @@
+{
+  "name": "@9gix/pi-timestamp",
+  "version": "0.1.0",
+  "description": "Cache-safe timestamp injection for pi-coding-agent — injects the current time into messages (optionally also the system prompt), with configurable format, timezone, position, and cadence.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "timestamp",
+    "time",
+    "context"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": "9gix",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9gix/pi-timestamp.git"
+  },
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.6.0",
+    "@types/node": "^24.13.3",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/timestamp.ts"
+    ],
+    "changelogPath": "./CHANGELOG.md"
+  }
+}
